@@ -1,9 +1,11 @@
 var http = require('http')
 var fs = require('fs')
+var serveStatic = require('serve-static')
 
-var index = fs.readFile('index.html')
+
+var index = fs.readFileSync('index.html')
 
 http.createServer(function(req, res) {
-  res.writeHead(200, {'Content-Type': 'text/plain'})
+  res.writeHeader(200, {"Content-Type": "text/html"});  
   res.end(index)
-}).listen(3000)
+}).listen(3001)

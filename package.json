@@ -1,0 +1,32 @@
+{
+  "name": "max_local_storage",
+  "version": "1.0.0",
+  "description": "creating a hash table in the browser. testing for max number of keyvalue pairs in browser.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeanAvery/MaxLocalStorage.git"
+  },
+  "keywords": [
+    "Local",
+    "Storage",
+    "HTML5",
+    "Hash",
+    "Table",
+    "DHT",
+    "Javascript"
+  ],
+  "author": "Sean Averu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeanAvery/MaxLocalStorage/issues"
+  },
+  "homepage": "https://github.com/SeanAvery/MaxLocalStorage#readme",
+  "dependencies": {
+    "serve-static": "^1.11.1"
+  }
+}
