@@ -1,4 +1,10 @@
-
+<script>
+  if(typeof(Storage) !== "undefined") {
+    console.log('storage is available')
+  } else {
+    alert('no storage for browser ' + navigator.appName)
+  }
+</script>
 <body>
   <h1>index html file here </h1>
 </body>
