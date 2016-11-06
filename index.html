@@ -1,10 +1,16 @@
 <script>
   if(typeof(Storage) !== "undefined") {
     console.log('storage is available')
+    console.log('browser is: ' + navigator.appName)
+    // Store
+    localStorage.setItem("lastname", "Smith");
+    // Retrieve
+    document.getElementById("result").innerHTML = localStorage.getItem("lastname");
   } else {
     alert('no storage for browser ' + navigator.appName)
   }
+
 </script>
 <body>
-  <h1>index html file here </h1>
+  <div id="resutl"></div>
 </body>
